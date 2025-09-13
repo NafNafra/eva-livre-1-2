@@ -1,0 +1,32 @@
+.BookCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  border-radius: 2rem;
+  width: auto;
+  height: auto;
+  margin: 1em;
+  padding: 1em;
+  width: 25%;
+  background-color: #ccc;
+  box-shadow: 0 0 0.5em rgb(199, 198, 198);
+  border-radius: 1em;
+
+  img {
+    margin: 0;
+    width: 19em;
+    height: 15em;
+    border-radius: 0.5em;
+  }
+
+  span {
+    line-height: 2em;
+    font-size: 1.2em;
+  }
+
+  .title {
+    font-weight: 800;
+  }
+}
