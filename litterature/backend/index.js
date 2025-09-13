@@ -12,9 +12,9 @@ const io = new Server(server, {
 })
 
 let quotes = [
-  { text: "Stay hungry, stay foolish.", author: "Steve Jobs", likes: 5 },
-  { text: "Life is what happens when you're busy making other plans.", author: "John Lennon", likes: 2 },
-  { text: "Do or do not. There is no try.", author: "Yoda", likes: 3 }
+  { quote: "Stay hungry, stay foolish.", name: "Steve Jobs", likes: 5 },
+  { quote: "Life is what happens when you're busy making other plans.", name: "John Lennon", likes: 2 },
+  { quote: "Do or do not. There is no try.", name: "Yoda", likes: 5 }
 ]
 
 io.on("connection", (socket) => {

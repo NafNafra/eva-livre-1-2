@@ -1,16 +1,19 @@
 import React from 'react'
-import QuoteForm from '../components/QuoteForm'
+import QuoteForm from '../components/QuoteForm/index'
 import QuoteList from '../components/QuoteList'
 import useQuotes from '../hooks/useQuotes'
+import './Home.scss'
 
 function Home() {
   const { quotes, addQuote, likeQuote } = useQuotes()
 
   return (
     <div className="home">
-      <h1>Mur de Citations</h1>
-      <QuoteForm onAddQuote={addQuote} />
-      <QuoteList quotes={quotes} onLike={likeQuote} />
+      <h2>Mur de Citations</h2>
+      <div className='content'>
+        <QuoteList quotes={quotes} onLike={likeQuote} />
+        <QuoteForm onAddQuote={addQuote} />
+      </div>
     </div>
   )
 }
